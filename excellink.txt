@@ -1,0 +1,15 @@
+try {
+					
+					wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(objPom.Frame3));
+					objPom.saveAsnew.click();
+					driver.switchTo().defaultContent();
+					//addPatientButton();
+					
+					//wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(pom.driverIframeBody));
+					//pom.patientButton.click();
+					//wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(pom.driverIframeBody));
+					//driver.switchTo().frame(pom.driverIframeBody);
+					
+				} catch (NoAlertPresentException e) {
+					System.out.println("No Alert Present, Moving To Next Data Provider.");
+				}
